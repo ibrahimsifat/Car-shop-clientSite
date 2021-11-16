@@ -3,6 +3,7 @@ import { Turn as Hamburger } from 'hamburger-react'
 import React, { useState } from "react";
 import {  NavLink } from "react-router-dom";
 import '../../App.css'
+import Logo from '../../img/logo.png'
 import useAuth from './useAuth';
 
 
@@ -28,15 +29,15 @@ const  Navigation=() =>{
     <>
       {/* <nav className={colorChange ? 'navbar colorChange sticky top-0 ' : 'navbar'}> */}
 
-      <div className="  mb-2 py-3 z-30 navigation  flex flex-wrap items-center justify-between px-2  ">
+      <div className="  mb-2 py-1 z-30 navigation  flex flex-wrap items-center justify-between px-2  ">
       
-        <div className="container px-4 mx-auto flex flex-wrap items-start justify-between ">
+        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between ">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <NavLink to='/'
               className="text-sm font-bold leading-relaxed inline-block ml-2 py-2 whitespace-nowrap uppercase  "
               
             >
-             <NavLink className=' ' to='/'> <img className='md:w-36 w-24 ' src={"logo"} alt="" />LOGO</NavLink>
+             <NavLink className=' ' to='/'> <img className='md:w-32 w-22 ' src={Logo} alt="" /></NavLink>
             </NavLink>
             <button
               className="z-50 cursor-pointer text-xl  leading-none px-1 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -68,18 +69,13 @@ const  Navigation=() =>{
                 >
                Explore
                 </NavLink>
-                <NavLink to='/allservices' activeClassName="selected"
+                <NavLink to='/aboutus' activeClassName="selected"
                   className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug  nav_hover  "
                   onClick={() => setNavbarOpen(!navbarOpen)}
                 >
                About Us
                 </NavLink>
-                <NavLink to='/allclients' activeClassName="selected"
-                  className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug  nav_hover  "
-                  onClick={() => setNavbarOpen(!navbarOpen)}
-                >
-               Our Clients
-                </NavLink>
+              
                 
                {!user.email? <NavLink to='/login' activeClassName="selected"
 

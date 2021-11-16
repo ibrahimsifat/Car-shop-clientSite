@@ -15,7 +15,7 @@ import AddService from './Admin/AddService/AddService';
 
 const Dashboard = () => {
     let { path, url } = useRouteMatch();
-    const {admin}=useAuth()
+    const {admin,logOut}=useAuth()
     return (
         <div className="min-h-screen flex">
         <div className="py-6 px-10 ">
@@ -40,18 +40,18 @@ const Dashboard = () => {
 
 
             <li>
-                <NavLink to={`${url}/insideDashboard`}  activeClassName="selected"  className=" my-2 block flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
+                <NavLink to={`${url}/insideDashboard`}  activeClassName="selected"  className=" my-7 block flex items-center text-md font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
                
                   My Order</NavLink>
         
                   </li>
                   <li>
-                <NavLink  activeClassName="selected" to={`${url}/review`} className=" my-2 block flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
+                <NavLink  activeClassName="selected" to={`${url}/review`} className=" my-7 block flex items-center text-md font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
                
-                  Review</NavLink>
+                 Add A Review</NavLink>
                   </li>
                   <li>
-                <NavLink  activeClassName="selected" to={`${url}/pay`} className=" my-2 inline-block flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
+                <NavLink  activeClassName="selected" to={`${url}/pay`} className=" my-7 inline-block flex items-center text-md font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
                
                   Payment</NavLink>
      
@@ -59,27 +59,33 @@ const Dashboard = () => {
               { admin&& 
                <div>
                  <li>
-                     <NavLink  activeClassName="selected" to={`${url}/makeadmin`} className=" my-2 inline-block flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
+                     <NavLink  activeClassName="selected" to={`${url}/makeadmin`} className=" my-7 inline-block flex items-center text-md font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
                
                      Make Admin</NavLink>
      
                   </li>
                  <li>
-                     <NavLink  activeClassName="selected" to={`${url}/manageallorder`} className=" my-2 inline-block flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
+                     <NavLink  activeClassName="selected" to={`${url}/manageallorder`} className=" my-7 inline-block flex items-center text-md font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
                
                      Manage All Orders</NavLink>
      
                   </li>
                  <li>
-                     <NavLink  activeClassName="selected" to={`${url}/addservice`} className=" my-2 inline-block flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
+                     <NavLink  activeClassName="selected" to={`${url}/addservice`} className=" my-7 inline-block flex items-center text-md font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
                
                     Add Service</NavLink>
      
                   </li>
                  <li>
-                     <NavLink  activeClassName="selected" to={`${url}/manageproduct`} className=" my-2 inline-block flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
+                     <NavLink  activeClassName="selected" to={`${url}/manageproduct`} className=" my-7 inline-block flex items-center text-md font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
                
                      Manage Product</NavLink>
+     
+                  </li>
+                 <li>
+                     <button onClick={logOut}  className=" my-7 inline-block flex items-center text-md font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">
+               
+                   Log Out</button>
      
                   </li>
                 </div>}

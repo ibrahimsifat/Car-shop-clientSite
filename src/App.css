@@ -21,7 +21,7 @@
 
 .nav_hover {
     position: relative;
-    color: #000;
+    color: #55148A;
     text-decoration: none;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .selected {
-    color: #FFCF2F;
+    color: #4F46E5;
 }
 
 .nav_hover:active {
@@ -62,7 +62,7 @@
 .fotter-style {
     fill-rule: evenodd;
     clip-rule: evenodd;
-    strokeLinejoin: round;
+    stroke-linejoin: round;
     stroke-miterlimit: 2;
 }
 

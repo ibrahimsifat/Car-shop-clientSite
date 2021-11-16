@@ -1,14 +1,16 @@
 import React from 'react';
 import './Banner.css'
-import  Navigation from  '../../shared/Navigation'
 
 
-const Img1='https://i.ibb.co/qFcFcgQ/slider-3.png'
-const Img2='https://i.ibb.co/4SVW68v/slider-1.png'
-const Img3='https://i.ibb.co/jLzX0qL/slider-2.jpg'
-const Img4='https://i.ibb.co/CHwDn4B/slider-4.jpg'
-const Img5='https://i.ibb.co/xSB8sNh/slider-5.jpg'
-const colors = [Img1,Img2,Img3,Img4,Img5];
+
+
+
+const Img1='https://i.ibb.co/XDV5Lyy/New-Project-3.jpg'
+const Img2='https://i.ibb.co/M5yPsMV/New-Project.jpg'
+const Img3='https://i.ibb.co/Bg7kmMJ/New-Project-1.jpg'
+const Img4='https://i.ibb.co/WFMD4SN/New-Project-2.jpg'
+
+const colors = [Img1,Img2,Img3,Img4];
 const delay = 2500;
 
 const Banner = () => {

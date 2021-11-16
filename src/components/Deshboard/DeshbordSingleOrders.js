@@ -47,7 +47,7 @@ const DeshbordSingleOrders = ({order}) => {
     
               <li className="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
                   <span
-                      className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                      className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Pending</span>
               </li>
     
               <li

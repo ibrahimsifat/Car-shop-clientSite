@@ -1,0 +1,11 @@
+.bgImage {
+    background-image: url(../../img/banner.jpg);
+}
+
+.bg-btn {
+    background-color: #270B55;
+}
+
+.bg-btn:hover {
+    background-color: #55148A;
+}

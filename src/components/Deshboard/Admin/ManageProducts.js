@@ -48,47 +48,46 @@ const ManageProducts = () => {
 const ManageSingleProduct = ({singleService,handleDelete}) => {
     const {img,title,Price,_id}=singleService
     return (
-        <div className=' my-2'>
+        <div>
+        <div className="bg-blue-100 my-4">
+      <ul className='w-full md:flex justify-between items-center'>
+        <li className="px-6 py-4 whitespace-no-wrap ">
+            <div className="flex items-center">
+                <div className="flex-shrink-0 h-10 w-24">
+                    <img className="h-10 w-24 rounded-md"
+                        src={img}
+                        alt=""/>
+                </div>
+
+                <div className="ml-4">
+                    <div className="text-sm leading-5 font-medium text-gray-900">{title}
+                    </div>
+                                          </div>
+            </div>
+        </li>
+
+        <li className="px-6 py-4 whitespace-no-wrap ">
+            <div className="text-sm leading-5 text-gray-900">{Price}</div>
             
-              <tbody className="bg-blue-100 ">
-            <tr>
-              <td className="px-6 py-4  border-b border-gray-200">
-                  <div className="flex items-center">
-                      <div className="flex-shrink-0 h-10 w-24">
-                          <img className="h-10 w-24 rounded-md"
-                              src={img}
-                              alt=""/>
-                      </div>
-    
-                      <div className="ml-4">
-                          <div className="text-sm leading-5 font-medium text-gray-900">{title}
-                          </div>
-                                                </div>
-                  </div>
-              </td>
-    
-              <td className="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                  <div className="text-sm leading-5 text-gray-900">{Price}</div>
-                  
-              </td>
-    
-              <td className="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                  <span
-                      className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
-              </td>
-    
-              <td
-                  className="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5 text-gray-500">
-                  Owner</td>
-    
-              <td 
-                  className="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium">
-                  <button onClick={()=>handleDelete(_id)} className="text-indigo-600 hover:text-indigo-900">Delete</button>
-              </td>
-                                        </tr>                            
-                                    
-                                    </tbody>
-        </div>
+        </li>
+
+        <li className="px-6 py-4 whitespace-no-wrap ">
+            <span
+                className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Pending</span>
+        </li>
+
+        <li
+            className="px-6 py-4 whitespace-no-wrap  text-sm leading-5 text-gray-500">
+            Owner</li>
+
+        <li
+            className="px-6 py-4 whitespace-no-wrap text-right  text-sm leading-5 font-medium">
+            <button onClick={()=>handleDelete(_id)} className="text-indigo-600 hover:text-indigo-900">Delete</button>
+        </li>
+                                 </ul>                            
+                              
+                              </div>
+  </div>
     );
 };
 export default ManageProducts;

@@ -1,19 +1,23 @@
-import React, { useState } from "react";
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
+import React from "react";
+import { CarouselProvider, Slider } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import { Testimonial } from "./Testimonial";
+import Img1 from '../../img/blog-01.jpg'
+import Img2 from '../../img/blog-02.jpg'
+import Img3 from '../../img/blog-03.jpg'
+import Img4 from '../../img/blog-04.jpg'
+import Img5 from '../../img/blog-05.jpg'
+import Img6 from '../../img/blog-06.jpg'
 
-import Testimonial from "./Testimonial";
-import Img1 from '../../img/avatar-1.jpg'
-import Img2 from '../../img/avatar-2.jpg'
-import Img3 from '../../img/avatar-3.jpg'
+
 /* Install pure-react-carousel using -> npm i pure-react-carousel */
 
 export default function TestimonialSlider() {
     return (
         <>
          <div className='my-16'>
-                <h2 className="text-2xl leading-6 text-gray-800 text-center px-4">Testimonials</h2>
-                <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">What our client says</h1>
+                <h2 className="text-2xl leading-6 text-gray-800 text-center px-4">Blog</h2>
+                <h1 className=" lg:text-5xl md:text-4xl text-2xl font-semibold px-4 leading-10 text-gray-800 mt-6 text-center">Our Latest Blogs</h1>
              
             </div>
         <div className="2xl:mx-auto 2xl:container flex justify-center">
@@ -27,12 +31,13 @@ export default function TestimonialSlider() {
                         
                             
                            
-                        <Testimonial img={Img1}></Testimonial>
-                        <Testimonial img={Img2}></Testimonial>
-                        <Testimonial img={Img3}></Testimonial>
-                        <Testimonial img={Img1}></Testimonial>
-                        <Testimonial img={Img2}></Testimonial>
-                        <Testimonial img={Img3}></Testimonial>
+                             
+                        <Testimonial img={Img1} title='Automakers with the highest customer satisfaction rankings' des='The American Customer Satisfaction Index reports that overall satisfaction scores for automakers stayed constant between 2020 and 2021. That good news, but a look at the past five years suggests that customer satisfaction in' ></Testimonial>
+                        <Testimonial img={Img2} title='back to body-on-frame' des='Rumors outlining what the future holds for the Dodge Durango are rampant. While some claim that the SUV is headed towards extinction, an unverified report suggests it will return for a fourth generation as a body-on-frame model aimed directly at the Chevrolet Tahoe.' ></Testimonial>
+                        <Testimonial img={Img3} title='McLaren partnership' des='HAMBURG — Audi supervisory board will discuss on Wednesday ways for the company to enter Formula One, including via possible partnership with McLaren Automotive, two sources told Reuters on Tuesday, adding no decision has yet been made.' ></Testimonial>
+                        <Testimonial img={Img4} title='suppliers to reduce carbon' des='TOKYO — Honda Motor has asked its main parts suppliers to reduce carbon emissions annually by 4% versus 2019 levels, the Nikkei daily reported on Tuesday.The Japanese carmaker aims to start implementing the targets in fiscal 2025, which begins in April 2025, the report said.' ></Testimonial>
+                        <Testimonial img={Img5} title='the gas-powered X5 M50i' des='The BMW iX era has officially begun, the electric crossover configurator going live with prices. The bidding starts at $83,200 before a $995 destination fee, for a total of $84,195 before options. That sum buys a dual-motor, all-wheel drive family carriage with 516 horsepower and 564 pound-feet of torque,' ></Testimonial>
+                        <Testimonial  img={Img6} title='going to be legal in the U.S.'des='Listen up, America. Adaptive driving beams are finally going to become legal, thanks to a provision in the infrastructure bill. This is great news for nighttime driving safety — your author is particularly excited that this technology will finally be legal in cars sold in the U.S.' ></Testimonial>
                    
                         </Slider>
                       
@@ -46,13 +51,13 @@ export default function TestimonialSlider() {
                         <Slider className="carousel__sliderLarge">
                            
                             
-                            
-                        <Testimonial img={Img1}></Testimonial>
-                        <Testimonial img={Img2}></Testimonial>
-                        <Testimonial img={Img3}></Testimonial>
-                        <Testimonial img={Img1}></Testimonial>
-                        <Testimonial img={Img2}></Testimonial>
-                        <Testimonial img={Img3}></Testimonial>
+                              
+                        <Testimonial img={Img1} title='Automakers ' des='The American Customer Satisfaction Index reports that overall satisfaction scores for automakers stayed constant between 2020 and 2021. That good news, but a look at the past five years suggests that customer satisfaction in' ></Testimonial>
+                        <Testimonial img={Img2} title='back on-frame' des='Rumors outlining what the future holds for the Dodge Durango are rampant. While some claim that the SUV is headed towards extinction, an unverified report suggests it will return for a fourth generation as a body-on-frame model aimed directly at the Chevrolet Tahoe.' ></Testimonial>
+                        <Testimonial img={Img3} title='McLaren partnership' des='HAMBURG — Audi supervisory board will discuss on Wednesday ways for the company to enter Formula One, including via possible partnership with McLaren Automotive, two sources told Reuters on Tuesday, adding no decision has yet been made.' ></Testimonial>
+                        <Testimonial img={Img4} title='suppliers reduce ' des='TOKYO — Honda Motor has asked its main parts suppliers to reduce carbon emissions annually by 4% versus 2019 levels, the Nikkei daily reported on Tuesday.The Japanese carmaker aims to start implementing the targets in fiscal 2025, which begins in April 2025, the report said.' ></Testimonial>
+                        <Testimonial img={Img5} title='Gas- X5 M50i' des='The BMW iX era has officially begun, the electric crossover configurator going live with prices. The bidding starts at $83,200 before a $995 destination fee, for a total of $84,195 before options. That sum buys a dual-motor, all-wheel drive family carriage with 516 horsepower and 564 pound-feet of torque,' ></Testimonial>
+                        <Testimonial  img={Img6} title='Legal in the U.S.'des='Listen up, America. Adaptive driving beams are finally going to become legal, thanks to a provision in the infrastructure bill. This is great news for nighttime driving safety — your author is particularly excited that this technology will finally be legal in cars sold in the U.S.' ></Testimonial>
                         </Slider>
                        
                     </div>
@@ -98,19 +103,3 @@ export default function TestimonialSlider() {
     );
 }
 
-const SliderContent=({index})=>{
-    return(
-        <Slide className="carousel__inner-slideLarge " index={3}>
-                           
-                            <div className="relative flex flex-col mx-4">
-                            <img src="https://i.ibb.co/b50f24j/carosel-1.png" alt="two girls" className="w-full" />
-                            <img src="https://i.ibb.co/Tb5CKHn/Rectangle-49.png" alt="opacity bg" className="absolute w-full top-0" />
-                            <div className="absolute m-6 bottom-0 z-30">
-                                <p className="text-sm leading-none text-white">Special collection</p>
-                                <h1 className="w-64 text-2xl font-semibold leading-8 mt-2 text-white">New Monochrome Collection</h1>
-                                <p className="mt-4 text-base font-medium cursor-pointer leading-4 underline text-white">Discover</p>
-                            </div>
-                        </div>
-                            </Slide>
-    )
-}

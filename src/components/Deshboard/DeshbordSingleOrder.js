@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import UseAllServices from '../shared/UseAllServices';
 
 const DeshbordSingleOrder= ({order})=> {

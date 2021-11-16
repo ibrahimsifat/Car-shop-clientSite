@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import DeshbordSingleOrder from '../DeshbordSingleOrder';
-import DeshbordSingleOrders from '../DeshbordSingleOrders';
+
 
 const ManageAllOrders = () => {
     const [orders,setOrder]=useState([])

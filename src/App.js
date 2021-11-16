@@ -10,6 +10,8 @@ import Login from './components/Login/Login';
 import SignUp from './components/Login/SignUp';
 import Navigation from '../src/components/shared/Navigation'
 import Dashboard from './components/Deshboard/Dashboard';
+import AllPortfolio from './components/AllPortfolio/AllPortfolio';
+
 function App() {
 
     const [showButton, setShowButton] = useState(false);
@@ -66,6 +68,9 @@ function App() {
      </PrivateRoute>
      <Route  path='/allservices'> 
          <AllService></AllService>
+     </Route>
+     <Route  path='/aboutus'> 
+         <AllPortfolio></AllPortfolio>
      </Route>
      <Route  path='/login'> 
          <Login></Login>
