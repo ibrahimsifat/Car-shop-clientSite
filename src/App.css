@@ -113,3 +113,8 @@
         background: #000;
     }
 }
+
+.aboutUsbg {
+    background-image: url(./img/banner.jpg);
+    height: 450px;
+}

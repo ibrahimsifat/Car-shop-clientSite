@@ -1,6 +1,5 @@
 import React from 'react';
-import AboutBody from './AboutBody';
-import Navigation from '../shared/Navigation'
+
 import './AboutUs.css'
 import { Link } from 'react-router-dom';
 import Team from '../Team/Team';
@@ -10,7 +9,7 @@ const AboutUs = () => {
     return (
       <>
       <div className='aboutUsbg'>
-        <Navigation></Navigation>
+     
             <div className='   flex justify-center flex-col items-center'>
             <p className="text-white font-extrabold text-3xl md:text-5xl">
                     About Us
