@@ -10,7 +10,6 @@ const DeshbordOrder = () => {
          fetch(`http://localhost:5000/orders?email=${email}`)
         .then(res=>res.json())
         .then(data=>setOrder(data))
-
     },[user,email])
     return (
         <div>

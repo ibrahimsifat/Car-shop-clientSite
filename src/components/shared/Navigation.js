@@ -28,18 +28,18 @@ const  Navigation=() =>{
     <>
       {/* <nav className={colorChange ? 'navbar colorChange sticky top-0 ' : 'navbar'}> */}
 
-      <div className="  mb-2 pt-8 z-30 navigation  flex flex-wrap items-center justify-between px-2  ">
+      <div className="  mb-2 py-3 z-30 navigation  flex flex-wrap items-center justify-between px-2  ">
       
-        <div className="container px-4 mx-auto flex flex-wrap items-start justify-between bg-black">
+        <div className="container px-4 mx-auto flex flex-wrap items-start justify-between ">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <NavLink to='/'
               className="text-sm font-bold leading-relaxed inline-block ml-2 py-2 whitespace-nowrap uppercase  "
               
             >
-             <NavLink className=' text-white' to='/'> <img className='md:w-36 w-24 ' src={"logo"} alt="" />LOGO</NavLink>
+             <NavLink className=' ' to='/'> <img className='md:w-36 w-24 ' src={"logo"} alt="" />LOGO</NavLink>
             </NavLink>
             <button
-              className="z-50 cursor-pointer text-xl text-white leading-none px-1 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              className="z-50 cursor-pointer text-xl  leading-none px-1 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
@@ -96,10 +96,10 @@ const  Navigation=() =>{
                     >
                     Dashboard
                 </NavLink>
-                  <button className='inline-block px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug  text-white' onClick={logOut}>
+                  <button className='inline-block px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug  ' onClick={logOut}>
                   Logout
                 </button>
-                  <p className='inline-block px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug  text-white' >
+                  <p className='inline-block px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug  ' >
                   Hello <span className='ml-2'> {user.displayName}</span>
                 </p>
 

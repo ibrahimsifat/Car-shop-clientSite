@@ -4,10 +4,10 @@ import UseAllServices from '../../shared/UseAllServices';
 import SingleHomeService from './DisplaySingleBooking';
 const ServiceBooking = () => {
     const {serviceId}=useParams()
-
-const [services]=UseAllServices()
-const displayService=services.filter(service=>service.id===serviceId)
 console.log(serviceId);
+const [services]=UseAllServices()
+const displayService=services.filter(service=>service._id===serviceId)
+
 console.log(services);
 console.log(displayService);
 

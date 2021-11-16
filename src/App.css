@@ -21,7 +21,7 @@
 
 .nav_hover {
     position: relative;
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
@@ -62,7 +62,7 @@
 .fotter-style {
     fill-rule: evenodd;
     clip-rule: evenodd;
-    stroke-linejoin: round;
+    strokeLinejoin: round;
     stroke-miterlimit: 2;
 }
 
