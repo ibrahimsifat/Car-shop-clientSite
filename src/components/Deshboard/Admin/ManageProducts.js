@@ -9,7 +9,7 @@ const ManageProducts = () => {
    const handleDelete = id => {
     const proceed = window.confirm('Are you sure, you want to delete?');
     if (proceed) {
-        const url = `http://localhost:5000/services/${id}`;
+        const url = `https://thawing-headland-16581.herokuapp.com/services/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

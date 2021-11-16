@@ -7,7 +7,7 @@ const DeshbordOrder = () => {
     const {user}=useAuth()
     const email=user.email
     useEffect(()=>{
-         fetch(`http://localhost:5000/orders?email=${email}`)
+         fetch(`https://thawing-headland-16581.herokuapp.com/orders?email=${email}`)
         .then(res=>res.json())
         .then(data=>setOrder(data))
     },[user,email])

@@ -16,10 +16,10 @@ const HandleServiceBooking=id=>{
      <div className="">
             <div className='container md:px-16 px-3  mx-auto'>
                   <div className='text-center pt-10 my-10'>
-            <h1 className='md:text-4xl text-2xl  sm:text-3xl font-bold '>MEET OUR TEAM</h1>
-            <p className='text-gray-700 mt-2'>- WE ARE STRONGER -</p>
+            <h1 className='md:text-4xl text-2xl  sm:text-3xl font-bold '>Today Special</h1>
+            <p className='text-gray-700 mt-2'>- OUR SERVICES -</p>
         </div>
-        <div className="grid grid-cols-3 gap-4 container">
+        <div className="container mx-auto grid md:grid-cols-3 gap-4 ">
            {
                limdedService.map(singleService=><SingleHomeService
                key={singleService.id}

@@ -11,6 +11,7 @@ import SignUp from './components/Login/SignUp';
 import Navigation from '../src/components/shared/Navigation'
 import Dashboard from './components/Deshboard/Dashboard';
 import AllPortfolio from './components/AllPortfolio/AllPortfolio';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
 
@@ -78,6 +79,9 @@ function App() {
   
      <Route  path='/signup'> 
          <SignUp></SignUp>
+     </Route>
+     <Route  path='*'> 
+         <NotFound></NotFound>
      </Route>
   
    

@@ -72,7 +72,7 @@ export default function TestimonialSlider() {
                     }
                     @media (min-width: 300px) and (max-width: 420px) {
                         .gallery-cell {
-                            height: 286px !important;
+                            height: 206px !important;
                             
                         }
                     }

@@ -8,7 +8,7 @@ const DashboardReview = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data)
-        axios.post('http://localhost:5000/review',data)
+        axios.post('https://thawing-headland-16581.herokuapp.com/review',data)
 .then(res=>{
    
     setSuccess(true)

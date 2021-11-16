@@ -4,8 +4,8 @@ const SingleHomeService = ({singleService,HandleServiceBooking}) => {
     const {img,Price,title,description,_id}=singleService
     return (
   
-        <div className="max-w-md w-full bg-gray-900 shadow-lg rounded-xl p-6">
-        <div className="flex flex-col ">
+        <div className="md:w-80 bg-gray-800 shadow-md mx-auto rounded-xl p-6">
+       
           <div className="">
             <div className="relative h-62 w-full mb-3 ">
               <div className="absolute flex flex-col top-0 right-0 p-3">
@@ -70,7 +70,7 @@ const SingleHomeService = ({singleService,HandleServiceBooking}) => {
             </div>
           </div>
         </div>
-      </div>
+     
       
     );
 };

@@ -12,7 +12,7 @@ const DisplaySingleBooking = ({singleService}) => {
     const order={
       img,title,description,Price,userName,email
     }
-    fetch('http://localhost:5000/order', {
+    fetch('https://thawing-headland-16581.herokuapp.com/order', {
       method: 'POST',
       headers: {
           'content-type': 'application/json'
